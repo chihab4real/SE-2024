@@ -3,6 +3,7 @@ public class Program {
 	//Useless comment
 	int a=10;
         System.out.println("Sample Program for SE-2024 git lab");
+	int b=20;
         System.out.println("Edit 1");
 	int c=30;
         System.out.println("Edit 2");
