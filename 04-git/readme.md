@@ -1,8 +1,9 @@
 # SE-2024
 
 
-## 03-CI
-Software Engineering - Task: 03-CI
+## 04-git
+
+Software Engineering - Task: 04-git
 
 Name and Surname: ChihabEddine Zitouni
 
