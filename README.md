@@ -1,5 +1,5 @@
 # SE-2024
-Software Engineering - Tasks
+(AI) Software Engineering - Tasks
 
 Name and Surname: ChihabEddine Zitouni
 
