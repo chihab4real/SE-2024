@@ -91,19 +91,19 @@ A person intending to purchase a product at an auction..
 **Actors:** [Seller](#ac1), [Buyer](#ac2)
 
 **Main scenario:**
-1. After a successful completion of an auction where [Buyer](#act2) has won ([UC6](#uc6)), [Seller](#act1) recevies notification from the system.
-2. [Seller](#act1) accesses the system and verifies the auction details.
-3. [Seller](#act1) prepares the product for transfer.
-4. [Seller](#act1) communicates with [Buyer](#act2) to arrange the transfer logistics.
-5. [Seller](#act1) updates the status of the auction in the system.
-6. [Seller](#act1) completes the transfer of the product to [Buyer](#act2) as agreed upon.
-7. [Seller](#act1) confirms the completion of the product transfer in the system.
+1. After a successful completion of an auction where [Buyer](#ac2) has won ([UC6](#uc6)), [Seller](#ac1) recevies notification from the system.
+2. [Seller](#ac1) accesses the system and verifies the auction details.
+3. [Seller](#ac1) prepares the product for transfer.
+4. [Seller](#ac1) communicates with [Buyer](#ac2) to arrange the transfer logistics.
+5. [Seller](#ac1) updates the status of the auction in the system.
+6. [Seller](#ac1) completes the transfer of the product to [Buyer](#ac2) as agreed upon.
+7. [Seller](#ac1) confirms the completion of the product transfer in the system.
 
 **Alternative scenarios:** 
 
 1.A. Dissimilarities in product's condition or issues with transfer process.
-* 4.A.1. [Seller](#act1) communicates with [Buyer](#act2) to resolve the issue.
-* 4.A.2  [Seller](#act1) updates the auction status in the system to indicates a delay in the transfer process.
+* 4.A.1. [Seller](#ac1) communicates with [Buyer](#ac2) to resolve the issue.
+* 4.A.2  [Seller](#ac1) updates the auction status in the system to indicates a delay in the transfer process.
 * 4.A.3  The transfer process continues once the issues are resolved.
 
 ---
