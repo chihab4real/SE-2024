@@ -99,14 +99,109 @@ A person intending to purchase a product at an auction..
 6. [Seller](#ac1) completes the transfer of the product to [Buyer](#ac2) as agreed upon.
 7. [Seller](#ac1) confirms the completion of the product transfer in the system.
 
+
 **Alternative scenarios:** 
 
-1.A. Dissimilarities in product's condition or issues with transfer process.
-* 4.A.1. [Seller](#ac1) communicates with [Buyer](#ac2) to resolve the issue.
-* 4.A.2  [Seller](#ac1) updates the auction status in the system to indicates a delay in the transfer process.
-* 4.A.3  The transfer process continues once the issues are resolved.
+6.A. Dissimilarities in product's condition or issues with transfer process.
+* 6.A.1. [Seller](#ac1) communicates with [Buyer](#ac2) to resolve the issue.
+* 6.A.2  [Seller](#ac1) updates the auction status in the system to indicates a delay in the transfer process.
+* 6.A.3  The transfer process continues once the issues are resolved.
 
 ---
+
+<a id="uc3"></a>
+### UC3: Receiving payment from the buyer
+
+**Actors:** [Seller](#ac1)
+
+**Main scenario:**
+1. [Seller](#ac1) receives notification of auction completion from the system.
+2. [Seller](#ac1) accesses the system and navigates to the auction details.
+3. [Seller](#ac1) verifies auction details, including the winning bid and buyer information.
+4. [Seller](#ac1) initiates the payment process.
+5. System prompts Seller to choose a payment method.
+6. [Seller](#ac1) provides payment details.
+7. System processes payment transaction and confirms receipt.
+8. [Seller](#ac1) updates auction status in the system to indicate payment received.
+
+**Alternative scenarios:** 
+* 5.A. If [Buyer](#ac2)'s payment method fails, system notfies [Seller](#ac1) to follow up with the buyer.
+---
+
+<a id="uc4"></a>
+### UC4: Handling Outbid Scenarios
+
+**Actors:** [Seller](#ac1), [Buyer](#ac2)
+
+**Main scenario:**
+1. System notifies [Seller](#ac1) of a new bid exceeding the current highest bid.
+2. [Seller](#ac1) evaluates the bid and decides whether to accept or outbid.
+3. If [Seller](#ac1) decides to outbid, they access the system and navigate to auction details.
+4. [Seller](#ac1) submits a higher bid.
+5. System updates auction listing with the new highest bid and notifies [Buyer](#ac2).
+6. If [Seller](#ac1) chooses not to outbid, system notifies [Buyer](#ac2) of outbid status.
+
+**Alternative scenarios:** 
+* 2.A. If [Seller](#ac1) decides not to bid higher and no further bids are placed, auction continues with current highest bid until duration ends.
+---
+
+<a id="uc5"></a>
+### UC5: Bidding on a Product
+
+**Actors:** [Buyer](#ac2)
+
+**Main scenario:**
+1. [Buyer](#ac2) accesses system and views auction listing.
+2. [Buyer](#ac2) reviews product details and current highest bid.
+3. [Buyer](#ac2) selects option to place bid.
+4. System prompts [Buyer](#ac2) to enter bid amount higher than current highest bid.
+5. [Buyer](#ac2) enters bid amount and confirms bid.
+6. System validates bid amount and updates auction listing.
+7. System notifies Seller and potential buyers of new bid.
+
+**Alternative scenarios:** 
+* 4.A. If bid amount entered is lower than current highest bid or invalid, system prompts [Buyer](#ac2) to correct amount.
+---
+
+
+<a id="uc6"></a>
+### UC6: Winning an Auction
+
+**Actors:** [Buyer](#ac2)
+
+**Main scenario:**
+1. [Buyer](#ac2) participates in auction by placing bids.
+2. When auction ends, system identifies [Buyer](#ac2) with highest bid as winner.
+3. System notifies winning [Buyer](#ac2) and prompts payment process.
+4. [Buyer](#ac2) accesses system to verify auction details and payment instructions.
+5. [Buyer](#ac2) selects option to make payment and chooses payment method.
+6. [Buyer](#ac2) provides payment details and confirms payment.
+7. System processes payment transaction and confirms auction completion to [Buyer](#ac2).
+
+**Alternative scenarios:** 
+* 2.A. If no bids are placed during auction duration, system notifies [Buyer](#ac2) that auction ended without a winner.
+---
+
+
+<a id="uc7"></a>
+### UC7: Making Payment for the Won Auction
+
+**Actors:** [Buyer](#ac2)
+
+**Main scenario:**
+1. [Buyer](#ac2) receives notification of winning auction and requirement to make payment.
+2. [Buyer](#ac2)  accesses system and navigates to auction details.
+3. [Buyer](#ac2)  verifies auction details, including winning bid and seller information.
+4. [Buyer](#ac2)  initiates payment process.
+5. System prompts [Buyer](#ac2)  to select payment method.
+6. [Buyer](#ac2)  provides payment details.
+7. System processes payment transaction and confirms completion.
+8. [Buyer](#ac2)  updates auction status in system to indicate payment made.
+
+**Alternative scenarios:** 
+* 5.A. If selected payment method fails, system notifies [Buyer](#ac2) to choose alternative method to complete transaction.
+---
+
 
 ## Business objects (also known as domain or IT objects)
 
