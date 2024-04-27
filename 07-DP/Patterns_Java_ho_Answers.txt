@@ -1,0 +1,19 @@
+1- Pattern: Decorator
+2- "interface" of objects that can be dynamically extended
+3- Holds a reference to Component and is a Component itself
+4- InputStream
+5- (InputStream, CheckSum)
+6- getCheckSum(): CheckSum
+7- FileInputStream
+8- A concrete object type which functionality can be dynamically modified
+9- A concrete decorator
+////
+10- Pattern: Composite
+11- nodes in the structure
+///
+12- Pattern: Observer
+13- Provides operations to add/remove observers and an operation to notify them when its state changes
+14- addMouseListener(MouseListener) / addActionListener(ActionListener)
+15- MouseListener
+16-ActionListener
+17- Listen to changes of subjects
