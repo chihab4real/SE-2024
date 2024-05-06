@@ -1,0 +1,25 @@
+## Question 3.1:
+Yes the test would stop
+@BeforeAll method  must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS)
+
+However, each test method should be independent of others and should not rely on shared state to maintain test, When using @BeforeAll it violates the principle of test isolation
+
+## Question 4.1:
+
+test1: Failure
+test2: Error
+
+## Question 4.2:
+
+AssertionFailedError
+
+## Question 5.1:
+ 
+white-box, because we are testing the  structure and logic of the calculate method
+
+## Question 5.2: 
+there are 4 possible paths,
+- path1: if **the customer is a subscriber** (return 0)
+- path2: if **the customer is not a subscriber** and his loyalty level is **SILVER** (return price * 0.9)
+- path3: if **the customer is not a subscriber** and his loyalty level is **GOLD** (return price * 0.8)
+- path4: if **the customer is not a subscriber and neither a SILVER or GOLD level** (return price)
