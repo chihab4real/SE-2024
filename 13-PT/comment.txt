@@ -1,0 +1,23 @@
+- Task1:
+--Before
+Average response time: 11559
+Throughput: 35.2/min
+
+--Changes Made:
+1. instead of calling CustomersDAO.getInstance().getCustomers() multiple times, we call it once and save the result in customers list.
+2. the averageSpendings() method is called once with the saved customers list and the result is saved in variable.
+3. replaced the loop with a stream to filter, map, and collect customer ids in a efficient way.
+
+--After:
+Average response time: 90
+Throughput: 1.9/sec
+
+
+- Task2:
+average throughput for the configuration assumed by analysts: 2.0/sec (2 cards per sec)
+
+to go from 2.0 to 5.5 --> 5.5*10/2.0 = 28 (27.5) printer
+
+results with 28 printer : 5.4/sec (doesn't match the expected value)
+
+results with 29 printer : 5.6/sec
